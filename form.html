@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    table,
+    th,
+    td {
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+
+<body style="background-color: beige;">
+  <div>
+    <div>
+      <img src="/templates/Kmart.png" alt="not found" style="height: 100;width: 250;">
+      &nbsp;&nbsp;<h1>Sentiment Analyzer </h1>
+    </div>
+    <br/>
+    <form method="POST">
+      <textarea name="text1" rows="10" cols="109"></textarea><br>
+        
+
+      <input type="submit">
+    </form>
+    {% if result %}
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Review</th>
+            <th>Sentiment</th>
+            <th>Aspect</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for col in result %}
+          <tr>
+            <td>{{col.review}}</td>
+            <td>{{col.result}}</td>
+            <td>{{col.aspect}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {%else%}
+      <p></p>
+      {%endif %}
+    </div>
+
+    {% if result %}
+    <div>
+      <img src="/templates/graphs.png" alt="not found">
+    </div>
+    {%endif %}
+
+  </div>
+</body>
+
+</html>
