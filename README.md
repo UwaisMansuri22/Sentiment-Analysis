@@ -1,5 +1,8 @@
 # **Aspect-Based Sentiment Analysis for Product Reviews**
 
+<img width="839" alt="image" src="https://github.com/user-attachments/assets/e6ec82e3-7e01-4841-90e0-e4c7f5478547" />
+
+
 In today's data-driven world, sentiment analysis plays a vital role across industries, helping businesses gain actionable insights from textual data. **Aspect-Based Sentiment Analysis (ABSA)** takes this one step further by categorizing data by aspect and identifying the sentiment associated with each one. This project focuses on leveraging ABSA to analyze product reviews, empowering businesses to make better decisions and enhance customer experiences.
 
 ---
